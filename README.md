@@ -5,8 +5,7 @@ This bot fetches the overall consensus of the 5min and 1min BNB/USDT charts base
 ## What is this fork?
 The original code for this created by jontstaz had an automatic "donation" function before every tx. It never worked as intended and most of the times just took half of your BNB. This fork:
 - Removes the donation function
-- Makes the wait for the bet closer to the close, creating a more accurate bet.
-- Prettier design lol
+- Makes the wait for the bet closer to the close, creating a more accurate bet. (Change this in /src/index.ts if you experience failed TXs)
 
 ## NFA and DYOR!
 
