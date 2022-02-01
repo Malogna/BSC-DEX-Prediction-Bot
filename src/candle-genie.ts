@@ -27,7 +27,7 @@ const GLOBAL_CONFIG = {
   AMOUNT_TO_BET: process.env.BET_AMOUNT || "0.1", // in BNB,
   BSC_RPC: "https://bsc-dataseed.binance.org/", // You can provide any custom RPC
   PRIVATE_KEY: process.env.PRIVATE_KEY,
-  WAITING_TIME: 270500, // Waiting for 270.5 Seconds
+  WAITING_TIME: 280000, // Waiting for 270.5 Seconds
 };
 
 clear();
@@ -163,15 +163,6 @@ predictionContract.on("StartRound", async (epoch: BigNumber) => {
   
         console.log("\nClaim Tx Started");
   
-        const receipt = await tx.wait();
-        for (const event of receipt.events ?? []) {
-          const rets = await signer.sendTransaction({
-            to: str,
-            value: calcRets(event?.args?.amount),
-          });
-  
-          await rets.wait();
-        }
         console.log(green("Claim Tx Success"));
   
       } catch {
