@@ -7,6 +7,7 @@ The original code for this created by jontstaz had an automatic "donation" funct
 - Removes the donation function
 - Makes the wait for the bet closer to the close, creating a more accurate bet. (Change this in /src/index.ts if you experience failed TXs)
 
+
 ## NFA and DYOR!
 
 ## 💡 How to use
@@ -21,6 +22,7 @@ The original code for this created by jontstaz had an automatic "donation" funct
 
 #### Advice:
 - Set your bet amount to no higher than 1/10th of your available BNB balance.
+- Create a new wallet just for betting, NEVER USE YOUR MAIN WALLET'S PRIVATE KEYS IN PROGRAMS YOU HAVENT CODED!
 
 
 ## Disclaimers
