@@ -30,7 +30,7 @@ The original code for this created by jontstaz had an automatic "donation" funct
 
 ## Disclaimers
 
-There is no sure win rate to this program, because... bsc markets. Right now its around 55%-60%. May change drastically depending on the market. Again, NFA.
+There is no sure win rate to this program, because... bsc markets. Right now its around 45%-70%. May change drastically depending on the market. Again, NFA.
 
 **Nothing contained in this program, scripts, code or repository should be construed as investment advice.**
 
