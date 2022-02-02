@@ -17,7 +17,7 @@ The original code for this created by jontstaz had an automatic "donation" funct
 3. Extract
 4. Edit `.env-example` with your private key and desired bet amount, then rename to `.env`
 5. run `npm install` in a command prompt in the folder
-6. For PancakeSwap run `npm run start`. For CandleGenie run `npm run candle`
+6. For PancakeSwap run `npm run start`. For CandleGenie run `npm run candle` (I don't know if CandleGenie works.)
 7. ???
 8. Profit
 
