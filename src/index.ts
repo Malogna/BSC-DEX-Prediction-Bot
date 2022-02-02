@@ -23,10 +23,10 @@ dotenv.config();
 // Global Config
 const GLOBAL_CONFIG = {
   PPV2_ADDRESS: "0x18B2A687610328590Bc8F2e5fEdDe3b582A49cdA",
- AMOUNT_TO_BET: process.env.BET_AMOUNT || "0.02", // in BNB,
+  AMOUNT_TO_BET: process.env.BET_AMOUNT || "0.02", // in BNB,
   BSC_RPC: "https://bsc-dataseed.binance.org/", // You can provide any custom RPC
   PRIVATE_KEY: process.env.PRIVATE_KEY,
-  WAITING_TIME: 280000, // Waiting for 280 Seconds
+  WAITING_TIME: Number(String(process.env.WAITING_TIME_ENV)) || 270000, // Waiting for 270 sec default, 30 seconds before close. Or set to env.
 };
 
 clear();
@@ -148,7 +148,7 @@ predictionContract.on("StartRound", async (epoch: BigNumber) => {
       );
     }
   } else {
-    console.log("Technical Analysis not definitive enough. Skipping round...")
+    console.log("Technical Analysis not definitive enough. Skipping round...");
   }
 
   const claimableEpochs = await getClaimableEpochs(
