@@ -12,11 +12,14 @@ The original code for this created by jontstaz had an automatic "donation" funct
 
 ## 💡 How to use
 
-1. Edit `.env-example` with your private key and desired bet amount then rename to `.env`
-2. run `npm install`
-3. For PancakeSwap run `npm run start`. For CandleGenie run `npm run candle`
-5. ???
-6. Profit
+1. Install [Node.JS](https://nodejs.org/en/download/)
+2. Clone this repository
+3. Extract
+4. Edit `.env-example` with your private key and desired bet amount, then rename to `.env`
+5. run `npm install` in a command prompt in the folder
+6. For PancakeSwap run `npm run start`. For CandleGenie run `npm run candle`
+7. ???
+8. Profit
 
 
 
