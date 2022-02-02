@@ -9,7 +9,6 @@ import {
   reduceWaitingTimeByTwoBlocks,
   sleep,
   getClaimableEpochs,
-  calcRets,
 } from "./lib";
 import {
   TradingViewScan,
